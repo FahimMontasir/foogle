@@ -1,7 +1,7 @@
 const inputVal = document.getElementById("inputVal").value;
 document.getElementById("btn-search").addEventListener('click', () => {
   document.getElementById("search-result").innerHTML = "";
-  fetch(`http://api.serpstack.com/search?access_key=35e49c041f2671e44a3dcc5bdef81e2b&query=${inputVal}`)
+  fetch(`https://api.serpstack.com/search?access_key=35e49c041f2671e44a3dcc5bdef81e2b&query=${inputVal}`)
     .then(res => res.json())
     .then(data => searchRes(data))
 })
